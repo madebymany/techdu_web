@@ -10,6 +10,10 @@
 # Ignore node
 node_modules
 
+# Ignore bower_installs
+bower_components
+
+
 # Ignore cache
 /.sass-cache
 /.cache

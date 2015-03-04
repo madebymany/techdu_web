@@ -1,0 +1,12 @@
+{
+  "name": "techdu",
+  "version": "0.0.0",
+  "authors": [
+    "Oli Matthews <olvado@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "css-patterns": "*"
+  }
+}
