@@ -7,8 +7,14 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "tEchDU" %></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,
+                                    initial-scale=1.0,
+                                    maximum-scale=1.0,
+                                    user-scalable=no,
+                                    minimal-ui">
+    <%= javascript_include_tag "modernizr" %>
     <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag  "build" %>
   </head>
   
   <body class="<%= page_classes %>" data-module="<%= current_page.data.module || "root" %>" data-action="<%= current_page.data.action || "index" %>">
@@ -28,5 +34,6 @@
 
       </footer>
     </div>
+    <%= javascript_include_tag  "build" %>
   </body>
 </html>

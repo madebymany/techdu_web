@@ -1,23 +1,23 @@
 ---
 title: tEchDU Events
-module: events
-action: index
+module: root
+action: events
 ---
 
 <h1><%= current_page.data.title %></h1>
 
 <section class="events">
-  <% t("events").map do |key, event| %>
+  <% t("events").map do |key, value| %>
     <article class="event">
       <header class="event-header">
-        <h3><%= event[:title] %></h3>
+        <h3><%= value[:title] %></h3>
       </header>
       <section class="event-content">
         <dl>
-          <dt>Date:</dt>
-          <dd><%= event[:date] %></dd>
-          <dt>Venue:</dt>
-          <dd><%= event[:venue] %></dd>
+          <% value.map.each do |k,v| %>
+            <dt><%= k.capitalize %>:</dt>
+            <dd><%= v %></dd>
+          <% end %>
         </dl>
       </section>
     </article>
