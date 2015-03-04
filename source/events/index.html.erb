@@ -1,0 +1,25 @@
+---
+title: tEchDU Events
+module: events
+action: index
+---
+
+<h1><%= current_page.data.title %></h1>
+
+<section class="events">
+  <% t("events").map do |key, event| %>
+    <article class="event">
+      <header class="event-header">
+        <h3><%= event[:title] %></h3>
+      </header>
+      <section class="event-content">
+        <dl>
+          <dt>Date:</dt>
+          <dd><%= event[:date] %></dd>
+          <dt>Venue:</dt>
+          <dd><%= event[:venue] %></dd>
+        </dl>
+      </section>
+    </article>
+  <% end %>
+</section>
