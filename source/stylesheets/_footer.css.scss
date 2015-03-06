@@ -1,0 +1,33 @@
+.site-footer {
+  background-color:#18191e;
+  color:#fff;
+  text-transform:uppercase;
+  font-size:1em;
+  padding:2em 0 1em;
+}
+
+.site-footer___links {
+  text-align:right;
+
+  & .inline-list__item {
+    margin-left:1em;
+  }
+
+  & a {
+    color:$yellow;
+    text-decoration:none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .site-footer {
+    text-align:center;
+    & .site-footer___links {
+      text-align:center;
+    }
+
+    & .inline-list__item {
+      margin: 0 1em;
+    }
+  }
+}

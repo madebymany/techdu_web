@@ -24,7 +24,7 @@
 #   page "/admin/*"
 # end
 
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
+# Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
@@ -48,10 +48,11 @@
 # end
 
 activate :directory_indexes
-activate :i18n
 
 set :css_dir, 'stylesheets'
+
 set :js_dir, 'javascripts'
+
 set :images_dir, 'images'
 
 after_configuration do
@@ -60,10 +61,11 @@ end
 
 # Build-specific configuration
 configure :build do
-  activate :minify_javascript
-  activate :minify_css
+  # For example, change the Compass output style for deployment
+  # activate :minify_css
 
-  ignore '*.md'
+  # Minify Javascript on build
+  # activate :minify_javascript
 
   # Enable cache buster
   # activate :asset_hash

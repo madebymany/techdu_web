@@ -1,12 +1,20 @@
 {
   "name": "techdu",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "authors": [
-    "Oli Matthews <olvado@gmail.com>"
+    "NelsonSachsMxM <nelson@madebymany.co.uk>"
   ],
+  "description": "techdu website",
   "license": "MIT",
-  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
-    "css-patterns": "*"
+    "css-patterns": "*",
+    "normalize-css": "~3.0.2"
   }
 }
