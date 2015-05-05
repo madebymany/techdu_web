@@ -67,19 +67,22 @@ li {
 body {
   background-color: $background;
   min-width: 320px;
-  margin:0;
 }
 
 .inline-list {
   list-style:none;
+  display: flex;
   margin:2;
 }
 
-.inline-list__item {
-  display: inline-block;
-    *display: inline;
-    zoom: 1
+.inline-list__item_right {
+  padding: 0.5em;
+  text-align: justify;
+  flex: 1 80%;
 }
-.col-1-2 {
-  width: 100%;
+
+.inline-list__item_left {
+  padding: 0.5em;
+  text-align: left;
+  flex: 1 20%; 
 }

@@ -1,68 +1,21 @@
-events:
-  # -
-  #   date: "2013-10-31 19:00"
-  #   registration_url: ""
-  #   techdu:
-  #     -
-  #       name: ""
-  #       pic: "2013/10/"
-  #       description: ""
-  #       objective: ""
-  #       video: ""
-  #       topic: ""
-  #       upcoming: ""
-  #     -
-  
-  
-    date: "2015-01-22 18:30"
-    registration_url: ""
-    name: "tEchDU.Brainstorm with teachers"
-    pic: "techdu5.jpg"
-    objective: ""
-    description: " Teachers, join us for this collaborative learning session on Thursday 12th January in Islington, London. Moderated by Made by Many’s Managing Director, Georgie Mack, the brainstorm will explore challenges and opportunities teachers face in the digital age.
-    <p>Expect: being challenged, sharing your ideas and experience, meeting other smart teachers, learning about what tech works and what doesn’t for your peers.
-    <p>More information and registration [here]."
-    video: ""
-    topic: ""
-    upcoming: "yes"
-  
-  -
-    date: "2014-11-25 18:30"
-    registration_url: ""
-    name: "tEchDU.Kids"
-    pic: "made-by-many.png"
-    description: "On April 5 at Made by Many offices, we hosted our first event tEchDU.Kids: Learn with Technology. It was an exciting fun opportunity to play with technology that got kids and parents learning together. See how it went in the video.
-    <p>
-    Having such great support from Technology Will Save Us and Codasign, who organised the two workshops, we unlocked the curiosity even in the shiest children and transformed it into a desire to know how things work and learn with technology.
-    <p>
-    During the workshops, we got kids painting images with conductive paint, which then turned the images into magical circuits and brought light and sound to their paintings, and thanks to DYI Gamer Kits using arduino children learned how to program games.
-    <p>
-    It was a great experiment and a learning opportunity for us too, to see not only children being excited about technology, but also all the parents encouraging their kids and getting directly involved.
-    <p>
-    We were absolutely delighted to see the amount of interest this triggered, and to receive such positive feedback at the event and afterwards. With tickets being sold out in a couple of days and a 100% turnout we are sure that this was a successful start of the tEchDU project.
-    <p>"
-
-    objective: ""
-    video: "http://vimeo.com/92722492"
-    topic: ""
-    upcoming: ""
-    -
-    date: "2014-11-25 18:30"
-    registration_url: ""
-    name: "tEchDU.Kids"
-    pic: "made-by-many.png"
-    description: "On April 5 at Made by Many offices, we hosted our first event tEchDU.Kids: Learn with Technology. It was an exciting fun opportunity to play with technology that got kids and parents learning together. See how it went in the video.
-    <p>
-    Having such great support from Technology Will Save Us and Codasign, who organised the two workshops, we unlocked the curiosity even in the shiest children and transformed it into a desire to know how things work and learn with technology.
-    <p>
-    During the workshops, we got kids painting images with conductive paint, which then turned the images into magical circuits and brought light and sound to their paintings, and thanks to DYI Gamer Kits using arduino children learned how to program games.
-    <p>
-    It was a great experiment and a learning opportunity for us too, to see not only children being excited about technology, but also all the parents encouraging their kids and getting directly involved.
-    <p>
-    We were absolutely delighted to see the amount of interest this triggered, and to receive such positive feedback at the event and afterwards. With tickets being sold out in a couple of days and a 100% turnout we are sure that this was a successful start of the tEchDU project.
-    <p>"
-
-    objective: ""
-    video: "http://vimeo.com/92722492"
-    topic: ""
-    upcoming: ""
+  - 
+    heading: "Brainstorm with Teachers"
+    media: techdu5.jpg
+    location: "Made by Many"
+    date: "19th March"
+    small_desc: "Brainstorming session with teachers to explore challenges and opportunities for teachers in the digital age. The goal was to learn about improving teacher's experience with technology in the classrooms and understand where the industry can help."
+    full_desc: "Technology is nowhere close to replacing teachers but it is aiding the transformation of their roles. Teachers are excited about use of tech in their classroom. In order to implement it successfully, they need to understand how it fits with the curriculum, learning objectives, and the assessment system they are working with. We will be publishing more detailed learnings about designing for education soon."
+  - 
+    heading: "Teachers in training workshop"
+    media: https://vimeo.com/122119375
+    location: "London South Bank University"
+    date: "27th February"
+    small_desc: "We were kindly invited by Clare Copeland, who is a senior lecturer in Education and a Course Director for PGCE Primary & Early Years teachers, to talk to her class about technology in education."
+    full_desc: "We decided to show these amazing future teachers playful ways to teach coding in a workshops with Raspberry Pi and Hackaball. This was a very exciting and inspiring opportunity for us to share some of our knowledge but, more importantly, to learn what future teachers are looking for in technology, and how tech can make their careers in teaching better."
+  - 
+    heading: "Kids"
+    media: https://vimeo.com/92722492
+    location: "Made by Many"
+    date: "5th of April"
+    small_desc: "At Made by Many offices, we hosted our first event tEchDU.Kids: Learn with Technology. It was an exciting fun opportunity to play with technology that got kids and parents learning together. "
+    full_desc: "Having such great support from Technology Will Save Us and Codasign, who organised the two workshops, we unlocked the curiosity even in the shiest children and transformed it into a desire to know how things work and learn with technology. During the workshops, we got kids painting images with conductive paint, which then turned the images into magical circuits and brought light and sound to their paintings, and thanks to DYI Gamer Kits using arduino children learned how to program games. It was a great experiment and a learning opportunity for us too, to see not only children being excited about technology, but also all the parents encouraging their kids and getting directly involved. We were absolutely delighted to see the amount of interest this triggered, and to receive such positive feedback at the event and afterwards. With tickets being sold out in a couple of days and a 100% turnout we are sure that this was a successful start of the tEchDU project."
