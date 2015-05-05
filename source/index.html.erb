@@ -14,24 +14,18 @@
 	</div>
 
 
-<% data.events_old.each do |event| %>
-	
-	<div class="event-content">
-		<h2 class="event-heading">Brainstorm with Teachers</h2>
-		<h3 class="event-small-desc"></h3>
-		<div class="event-media"></div>
-    	<ul class="event-desc inline-list col-1-2">
-	      <li class="inline-list__item">
-	      	London South Bank University
-			27th February, 2-5pm	
-			</li>
-	      <li class="inline-list__item">
-	      	Brainstorming session with teachers to explore challenges and opportunities for teachers in the digital age. The goal was to learn about improving teacher's experience with technology in the classrooms and understand where the industry can help.
-	      </li>
-     	</ul>
-     	<div class="event-full-desc">
-     		Technology is nowhere close to replacing teachers but it is aiding the transformation of their roles. Teachers are excited about use of tech in their classroom. In order to implement it successfully, they need to understand how it fits with the curriculum, learning objectives, and the assessment system they are working with. We will be publishing more detailed learnings about designing for education soon.
-     	</div>
-  	</div>
-  	<% end %>
+	<% data.events.each do |event| %>
+		<div class="event-content">
+			<h2 class="event-heading"><%= event.heading %></h2>
+			<div class="event-media"><%= event.media %></div>
+	    	<ul class="inline-list ">
+	    		<li class="inline-list__item_left">
+		      		<div ><%= event.date %></div>
+		      		<div ><%= event.location %></div>
+		      	</li>
+		      <li class="inline-list__item_right"><%= event.small_desc %></li>
+	     	</ul>
+	     	<div class="event-full-desc"><%= event.full_desc %></div>
+	  	</div>
+	<% end %>
 </body> 
