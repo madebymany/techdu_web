@@ -1,8 +1,37 @@
-<div class="about">
-	<div class="site-width main-content main-content--current-event">
-	  <h2 class="main-heading">About us</h2>
-	  <p class="main-desc">Technology is not great because it’s new. It is great because it unlocks opportunities otherwise impossible. 
-	  <p class="main-desc">Our mission is to help bring impactful and transformative technology into education.
-	  <p class="main-desc">We learn what matters to students and teachers most and collaborate with people who create edtech to help them focus on the right thing. We live and breathe technology. We also love meaningful stuff.</p>
+<header class="header">
+	<img class="header__media" src="/images/techdu_backgroud.gif">
+	<div class="header__overlay">
+		<img style="width:60%" src="/images/logo.png" alt="techdu logo" />
+		<h1 class="header__text">Bringing impactful and transformative technology into education</h1>
 	</div>
-</div>
+</header>
+<body class="body">
+	<div class="main-content">
+		<p class="title"> What is tEchDU?</p>
+		<p class="desc">
+			We learn what matters to students and teachers most and collaborate with Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+		</p>
+	</div>
+
+
+<% data.events_old.each do |event| %>
+	
+	<div class="event-content">
+		<h2 class="event-heading">Brainstorm with Teachers</h2>
+		<h3 class="event-small-desc"></h3>
+		<div class="event-media"></div>
+    	<ul class="event-desc inline-list col-1-2">
+	      <li class="inline-list__item">
+	      	London South Bank University
+			27th February, 2-5pm	
+			</li>
+	      <li class="inline-list__item">
+	      	Brainstorming session with teachers to explore challenges and opportunities for teachers in the digital age. The goal was to learn about improving teacher's experience with technology in the classrooms and understand where the industry can help.
+	      </li>
+     	</ul>
+     	<div class="event-full-desc">
+     		Technology is nowhere close to replacing teachers but it is aiding the transformation of their roles. Teachers are excited about use of tech in their classroom. In order to implement it successfully, they need to understand how it fits with the curriculum, learning objectives, and the assessment system they are working with. We will be publishing more detailed learnings about designing for education soon.
+     	</div>
+  	</div>
+  	<% end %>
+</body> 

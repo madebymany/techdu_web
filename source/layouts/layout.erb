@@ -15,11 +15,7 @@
   
   <body class="<%= page_classes %>">
     <header class="app-header">
-      <nav class="app-header_nav nav">
-        <%= link_to "Home", "/", class: "nav-link" %>
-        <%= link_to "Events", "/pages/events", class: "nav-link" %>
-        <%= link_to "Gallery", "/pages/gallery", class: "nav-link" %>
-      </nav>
+      
     </header>  
     
     <%= yield %>
@@ -29,10 +25,6 @@
         <div class="col-1-2">
           An event by <a href="http://www.madebymany.com"><img src="images/mxm-logo.png" alt="Made by Many" /></a>
         </div>
-        <ul class="inline-list col-1-2 site-footer___links">
-          <li class="inline-list__item"><a href="https://twitter.com/TeCH_du">Twitter</a></li>
-          <li class="inline-list__item"><a href="http://eepurl.com/QEIiX">Mailing List</a></li>
-         </ul>
       </div>
       
       <script>
