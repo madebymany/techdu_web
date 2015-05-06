@@ -13,17 +13,21 @@
     <%= javascript_include_tag  "all" %>
   </head>
   
-  <body class="<%= page_classes %>">
-    <header class="app-header">
-      
-    </header>  
-    
+  <body class="">
     <%= yield %>
 		
     <footer class="site-footer">
       <div class="grid site-width">
-        <div class="col-1-2">
-          An event by <a href="http://www.madebymany.com"><img src="images/mxm-logo.png" alt="Made by Many" /></a>
+        
+          An event by <a href="http://www.madebymany.com"><img class="site-footer-logo" src="images/mxm-logo.png" alt="Made by Many" /></a>
+        </div>
+        <div class="sign-up__form__field">
+          <input placeholder="Join our mailing list" name="EMAIL" type="text" class="sign-up__form__email">
+        </div>
+        <div class="sign-up__form__field">
+          <button type="submit" class="sign-up__form__submit">
+            Submit
+          </button>
         </div>
       </div>
       

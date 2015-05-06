@@ -1,9 +1,11 @@
 .site-footer {
-  background-color:#18191e;
-  color:#fff;
-  text-transform:uppercase;
-  font-size:1em;
-  padding:2em 0 1em;
+  background-color: $white;
+  color: $grey;
+  font-size: 1em;
+  padding: 1em;
+  text-align: center;
+  height: 50%;
+  white-space: nowrap;
 }
 
 .site-footer___links {
@@ -17,6 +19,12 @@
     color:$yellow;
     text-decoration:none;
   }
+}
+
+.site-footer-logo {
+  width: 25%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 500px) {

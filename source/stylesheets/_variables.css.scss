@@ -7,7 +7,10 @@ $black: #000000;
 $brown: rgb(112, 97, 59);
 $dark-grey: rgb(52, 52, 62);
 $overlay-header: rgba(0, 0, 0, .5);
+$highlight-color: $yellow;
 
 // Page properties
 $spacing-height: 15px;
 $max-site-width: 100em;
+$tablet-min-width: "(min-width: 40em)";
+$desktop-min-width: "(min-width: 50em)";
