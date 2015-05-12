@@ -23,6 +23,7 @@
 
 .sign-up__form__field {
   margin-bottom: 1em;
+  margin-top: 1.5em;
 
   &:last-child {
     margin-bottom: 0;
@@ -30,7 +31,6 @@
 
   @include media-query("(min-width: 72em)") {
     display: inline-block;
-    margin-right: .5em;
 
     &:last-child {
       margin-right: 0;
@@ -40,13 +40,14 @@
 
 .sign-up__form__submit {
   @extend %button--ghost;
+  margin-left: -7px;
 }
 
 .sign-up__form__email {
   @extend %unstyled-input;
   @extend %button-or-input-field-text;
   @include appearance(none);
-  border: 2px solid $yellow;
+  border: 2px solid $grey;
   background-color: #fff;
   padding: .5em 1em .65em;
   display: block;

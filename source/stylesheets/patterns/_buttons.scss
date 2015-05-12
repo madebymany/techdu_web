@@ -40,8 +40,4 @@
 
 %button-or-input-field-text {
   font-size: em(18);
-
-  @include media-query($tablet-min-width) {
-    font-size: em(24);
-  }
 }
