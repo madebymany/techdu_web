@@ -1,0 +1,43 @@
+%button {
+  @extend %unstyled-anchor;
+  @extend %unstyled-input;
+  @extend %button-or-input-field-text;
+  padding: .5em 1.5em .65em;
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  @include media-query($tablet-min-width) {
+    display: inline-block;
+    padding-left: 1.5em; padding-right: 1.5em;
+    text-align: left;
+    width: auto;
+  }
+}
+
+%button--filled {
+  @extend %button;
+  @include transition(background-color .25s);
+  background-color: $highlight-color;
+  color: #fff;
+
+  @include hover {
+    background-color: darken($highlight-color, 20%);
+  }
+}
+
+%button--ghost {
+  @extend %button;
+  @include transition(.25s);
+  border: 2px solid $highlight-color;
+  color: $highlight-color;
+
+  @include hover {
+    background-color: $highlight-color;
+    color: #fff;
+  }
+}
+
+%button-or-input-field-text {
+  font-size: em(18);
+}

@@ -1,0 +1,72 @@
+.sign-up {
+  padding: 0 1em;
+
+  @include media-query($tablet-min-width) {
+    float: left;
+    width: 50%;
+  }
+}
+
+.sign-up__form__legend {
+  margin-bottom: 1em;
+  color: $black;
+
+  @include media-query($tablet-min-width) {
+    margin-bottom: 2em;
+    font-size: em(20);
+  }
+}
+
+.sign-up__form__label {
+  @extend %visually-hidden;
+}
+
+.sign-up__form__field {
+  margin-bottom: 1em;
+  margin-top: 1.5em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media-query("(min-width: 72em)") {
+    display: inline-block;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.sign-up__form__submit {
+  @extend %button--ghost;
+  margin-left: -7px;
+}
+
+.sign-up__form__email {
+  @extend %unstyled-input;
+  @extend %button-or-input-field-text;
+  @include appearance(none);
+  border: 2px solid $grey;
+  background-color: #fff;
+  padding: .5em 1em .65em;
+  display: block;
+  width: 100%;
+
+  &:focus {
+    border-color: $yellow;
+  }
+
+  @include media-query("(min-width: 72em)") {
+    width: 400px;
+  }
+}
+
+.sign-up__form__submit,
+.sign-up__form__email {
+  font-size: em(16);
+
+  @include media-query($tablet-min-width) {
+    font-size: em(20);
+  }
+}
