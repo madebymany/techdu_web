@@ -3,9 +3,8 @@ module EventHelper
     data.events
   end
 
-  def event_has_URL(e.media)
-    if "http" in e :
-      puts "success"
+  def event_has_url?(e)
+  	e.media =~ /\Ahttps?:\/\//
   end
 
 end

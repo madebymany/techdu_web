@@ -14,3 +14,22 @@
 .event-full-desc {
 	padding: 0 0 0 5%;
 }
+
+.event-media {
+	text-align:center;
+}
+
+.event-image {
+  @include fluid-media-wrapper;  
+}
+
+.event-image__media {
+  @include fluid-media-wrapper__media;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+    display: block;
+    margin-top: -5%;
+  }
+}

@@ -1,0 +1,39 @@
+
+@mixin fluid-media-wrapper__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin fluid-media-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+
+  iframe,
+  object,
+  embed,
+  .fluid-media-wrapper__media {
+    @include fluid-media-wrapper__media;
+  }
+}
+
+.fluid-media-wrapper {
+   @include fluid-media-wrapper;
+}
+
+.fluid-media-wrapper--1-1 {
+   padding-top: 100%;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
