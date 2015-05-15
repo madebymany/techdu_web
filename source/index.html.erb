@@ -30,6 +30,8 @@
 	<% data.events.each do |event| %>
 		<div class="event-content">
 			<h2 class="event-heading"><%= event.heading %></h2>
+			<h1><%= event_has_URL(event) %></h1>
+
 			<div class="event-media">
 			<%= event.media %></div>
 	    	<ul class="inline-list ">

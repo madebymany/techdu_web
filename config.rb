@@ -41,12 +41,9 @@
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
-
+require "lib/event_helper"
+helpers EventHelper
+ 
 activate :directory_indexes
 
 set :css_dir, 'stylesheets'
