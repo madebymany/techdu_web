@@ -24,23 +24,21 @@
 .sign-up__form__field {
   margin-bottom: 1em;
   margin-top: 1.5em;
+  display: inline-block;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  @include media-query("(min-width: 72em)") {
-    display: inline-block;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
 }
 
 .sign-up__form__submit {
   @extend %button--ghost;
   margin-left: -7px;
+}
+
+.sign-up__form__field__header {
+  @extend %button--ghost;
 }
 
 .sign-up__form__email {

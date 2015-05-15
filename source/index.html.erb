@@ -1,11 +1,25 @@
 <header class="header">
-	<img class="header__media" src="/images/techdu_backgroud.gif">
+	<img class="header__media" src="/images/techdu_background.gif">
 	<div class="header__overlay">
-		<img style="width:70%; display: flex;" src="/images/logo.png" alt="techdu logo" />
-		<h1 class="header__text">Bringing impactful and transformative technology into education</h1>
+	<div class="horizontal">
+		<div class="vertical">
+			<img style="header__logo" src="/images/logo.png" alt="techdu logo" />
+		</div>
+	</div>
+	<h1 class="header__text">Bringing impactful and transformative technology into education</h1>
+	<p style="text-align: center; margin-top: 10px; margin-bottom: 10px;">Subscribe to our mailing list for tickets reminders and info about future events</p>
+	<form class="header__input" action="//madebymany.us3.list-manage.com/subscribe?u=bb6ef8c1b569c34510855551f&id=2c5505341e" method="post">
+		<div class="sign-up__form__field">
+      		<input placeholder="Enter email address" name="email" type="text" class="sign-up__form__email">
+    	</div>
+    	<div class="sign-up__form__field">
+      		<button type="submit" class="sign-up__form__submit">Submit</button>
+    	</div>
+    </form>
 	</div>
 </header>
-<body class="body">
+
+<body>
 	<div class="main-content">
 		<p class="title"> What is tEchDU?</p>
 		<p class="desc">
@@ -13,11 +27,11 @@
 		</p>
 	</div>
 
-
 	<% data.events.each do |event| %>
 		<div class="event-content">
 			<h2 class="event-heading"><%= event.heading %></h2>
-			<div class="event-media"><%= event.media %></div>
+			<div class="event-media">
+			<%= event.media %></div>
 	    	<ul class="inline-list ">
 	    		<li class="inline-list__item_left">
 		      		<div ><%= event.date %></div>
