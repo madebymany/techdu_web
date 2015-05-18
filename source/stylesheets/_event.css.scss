@@ -5,10 +5,19 @@
 	padding: 5%;
 }
 
-.event-heading {
+@mixin event-heading {
 	text-align:center;
 	font-size: 2em;
 	padding: 0.5em 0 0.5em 0;
+}
+
+.event-heading {
+	@include event-heading;	
+}
+
+.event-heading__number {
+	@include event-heading;
+	font-size: 1em;
 }
 
 .event-full-desc {
@@ -20,7 +29,7 @@
 }
 
 .event-image {
-  @include fluid-media-wrapper;  
+  @include fluid-media-wrapper;
 }
 
 .event-image__media {

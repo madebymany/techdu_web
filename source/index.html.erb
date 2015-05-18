@@ -28,30 +28,31 @@
 	</div>
 
 	<% data.events.each do |event| %>
-		<div class="event-content">
+		<div class="event-content" style="background-size: 250%; background-image: url(/images/background/<%= event.background %>);">
+			<h2 class="event-heading__number"><%= event.event_number %></h2>
 			<h2 class="event-heading"><%= event.heading %></h2>
-			
+				
 			<% if event_has_url?(event) %>
 				<div class="event-media site-width">
 	        <iframe src='<%= event.media %>' width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	    	</div>
-    	<% else %>
-    		<div class="event-image site-width">
+	  	<% else %>
+	  		<div class="event-image site-width">
 	    		<div class="event-image__media">
 	  				<img src="/images/<%= event.media %>">
 	  			</div>
 	  		</div>
-    	<% end %>
+	  	<% end %>
 
-    	<ul class="inline-list site-width">
-    		<li class="inline-list__item_left">
+	  	<ul class="inline-list site-width">
+	  		<li class="inline-list__item_left">
 	      		<div ><%= event.date %></div>
 	      		<div ><%= event.location %></div>
 	      	</li>
 	      <li class="inline-list__item_right"><%= event.small_desc %></li>
-	    </ul>
+		  </ul>
 
-	    <div class="event-full-desc site-width"><%= event.full_desc %></div>
+		  <div class="event-full-desc site-width"><%= event.full_desc %></div>
 	  </div>
 	<% end %>
 </body> 
