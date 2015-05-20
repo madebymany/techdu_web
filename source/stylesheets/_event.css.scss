@@ -1,9 +1,9 @@
-.event-content {
-	background-color: $dark-grey;	
+.event-inner {
+	margin: 0 auto;
+	max-width: $content-max-width;
 	color: $white;
-	display: block;
-	padding: 5%;
 }
+
 
 @mixin event-heading {
 	text-align:center;
@@ -11,21 +11,47 @@
 	padding: 0.5em 0 0.5em 0;
 }
 
-.event-heading {
-	@include event-heading;	
+.event-heading__title {
+	text-align:center;
+	font-size: 2em;
+	font-weight: bold;
+	padding: 0.5em 0 0.5em 0;
 }
 
-.event-heading__number {
-	@include event-heading;
+.event-heading__label {
+	text-align:center;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.event-description {
+	font-size: 1.3em;
+	line-height: 130%;
+}
+
+.event-details {
+	@include inline-list;
 	font-size: 1em;
 }
 
+.event-details__location {
+	@include inline-list__item--left;
+	font-size: 1.3em;
+	line-height: 130%;
+}
+
+.event-details__description {
+	@include inline-list__item--right;
+	font-size: 1.3em;
+	line-height: 130%;
+}
+
 .event-full-desc {
-	padding: 0 0 0 5%;
+	
 }
 
 .event-media {
-	text-align:center;
+	@include fluid-media-wrapper;
 }
 
 .event-image {
@@ -38,6 +64,8 @@
 
   img {
     max-width: 100%;
+    width: 940;
+    height: 530;
     display: block;
     margin-top: -5%;
   }
