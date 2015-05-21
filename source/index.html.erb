@@ -1,22 +1,24 @@
 <header class="header">
   <img class="header__media" src="/images/techdu_background.gif">
-  <div class="header__overlay">
-    <div class="horizontal">
-      <div class="vertical">
-        <img style="header__logo" src="/images/logo.png" alt="techdu logo" />
+  <div class="header-inner">
+    <div class="header__overlay">
+      <div class="horizontal">
+        <div class="vertical">
+          <img style="header__logo" src="/images/logo.png" alt="techdu logo" />
+         </div>
       </div>
+      <h1 class="header__text">Bringing impactful and transformative technology into education</h1>
+      <svg height="2" width="80" style="background-color:white; display: inline-block; vertical-align: top; display:block; margin: auto;"/>
+      <p style="text-align: center; margin-top: 10px; margin-bottom: 10px;">Subscribe to our mailing list for tickets reminders and info about future events</p>
+      <form class="header__input" action="//madebymany.us3.list-manage.com/subscribe?u=bb6ef8c1b569c34510855551f&id=2c5505341e" method="post">
+        <div class="sign-up__form__field">
+          <input placeholder="Enter email address" name="email" type="text" class="sign-up__form__email">
+        </div>
+        <div class="sign-up__form__field">
+          <button type="submit" class="sign-up__form__submit">Submit</button>
+        </div>
+      </form>
     </div>
-    <h1 class="header__text">Bringing impactful and transformative technology into education</h1>
-    <svg height="2" width="80" style="background-color:white; display: inline-block; vertical-align: top; display:block; margin: auto;"/>
-    <p style="text-align: center; margin-top: 10px; margin-bottom: 10px;">Subscribe to our mailing list for tickets reminders and info about future events</p>
-    <form class="header__input" action="//madebymany.us3.list-manage.com/subscribe?u=bb6ef8c1b569c34510855551f&id=2c5505341e" method="post">
-      <div class="sign-up__form__field">
-        <input placeholder="Enter email address" name="email" type="text" class="sign-up__form__email">
-      </div>
-      <div class="sign-up__form__field">
-        <button type="submit" class="sign-up__form__submit">Submit</button>
-      </div>
-    </form>
   </div>
 </header>
 
@@ -30,7 +32,7 @@
   </div>
 
   <% data.events.each do |event| %>
-    <section class="event" style="background-size: 250%; background-image: url(/images/background/<%= event.background %>);">
+    <section class="event" style="background-size: 350%; background-image: url(/images/background/<%= event.background %>);">
       <div class="event-inner">
         <header class="event-heading">
           <h3 class="event-heading__label"><%= event.event_number %></h3>

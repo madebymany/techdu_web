@@ -2,8 +2,8 @@
 	margin: 0 auto;
 	max-width: $content-max-width;
 	color: $white;
+  padding: 3em;
 }
-
 
 @mixin event-heading {
 	text-align:center;
@@ -35,7 +35,6 @@
 }
 
 .event-details__location {
-	@include inline-list__item--left;
 	font-size: 1.3em;
 	line-height: 130%;
 }
@@ -47,7 +46,7 @@
 }
 
 .event-full-desc {
-	
+	padding: 0.5em;
 }
 
 .event-media {
