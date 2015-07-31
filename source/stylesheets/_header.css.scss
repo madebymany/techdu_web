@@ -6,16 +6,18 @@
 .header-container {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 .header__media {
   position: absolute;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  height: auto;
   min-width: 100%;
   min-height: 100%;
+  transform: translateX(-50%) translateY(-50%);
   z-index: -1;
 
   @include media-query("(max-width: 650px)") {
