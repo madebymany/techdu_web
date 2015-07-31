@@ -5,29 +5,27 @@
     
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
     
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "tEchDU" %></title>
     
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <%= stylesheet_link_tag "all" %>
   </head>
   
   <body>
     <%= yield %>
 		
     <footer class="site-footer">
-    <form class="sign-up__form" action="//madebymany.us3.list-manage.com/subscribe?u=bb6ef8c1b569c34510855551f&id=2c5505341e" method="post">
-      <div class="grid site-width">
-        An event by <a href="http://www.madebymany.com"><img class="site-footer-logo" src="images/mxm-logo.png" alt="Made by Many" /></a>
-        </div>
+      <div class="grid site-width">A project from the creative minds of <a href="http://www.madebymany.com"><img class="site-footer-logo" src="images/mxm-logo.png" alt="Made by Many" /></a>
+      </div>
+      <form class="header__input" action="//madebymany.us3.list-manage.com/subscribe?u=bb6ef8c1b569c34510855551f&id=2c5505341e" method="post">
         <div class="sign-up__form__field">
           <input placeholder="Join our mailing list" name="email" type="text" class="sign-up__form__email">
         </div>
         <div class="sign-up__form__field">
           <button type="submit" class="sign-up__form__submit">Submit</button>
         </div>
-      </div>
       </form>
       
       <script>

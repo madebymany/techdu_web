@@ -64,6 +64,9 @@ configure :build do
   # Enable cache buster
   activate :asset_hash
 
+  # Replace Bourbon with autoprefixer
+  activate :autoprefixer
+
   # Use relative URLs
   # activate :relative_assets
 

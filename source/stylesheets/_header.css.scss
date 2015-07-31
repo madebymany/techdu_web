@@ -1,50 +1,81 @@
 .header {
-	position: relative;
+  position: relative;
+  width: 100%;
 }
 
-.header-inner {
-  max-width: $content-max-width;
+.header-container {
+  position: relative;
+  width: 100%;
 }
 
 .header__media {
-	display: block;
-	width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+
+  @include media-query("(max-width: 650px)") {
+    background-image: url("../images/background/techdu_kids_blur.png");
+    background-repeat: no-repeat;
+    width: auto; /*or your image's width*/
+    height: auto; /*or your image's height*/
+    margin: 0;
+    padding: 0;
+  }  
+}
+
+.header__logo{
+  width: 80%;
+  max-width: 25em;
+  margin: 3em auto 0.625em auto;
+  display: block;
 }
 
 .header__overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: $overlay-header;
-	color: #fff;
+  background-color: $overlay-header;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
 }
 
 .header__text {
-	text-align:center;
-	font-size: 2.75em;
-	font-weight: bold;
-	padding: 0 2em 0 2em;
+  font-size: 1.5em;
+  font-weight: bold;
+  max-width: 80%;
+  display: inline-block;
+
+  @include media-query($tablet-min-width) {
+    font-size: 2.75em;
+  }
+
+  &:after {
+    width: 80px;
+    height: 2px;
+    background-color: #fff;
+    content: "";
+    display: block;
+    margin: 1em auto;
+
+  }
 }
 
-.header__logo {
-	height: auto; 
-	width: auto; 
-	max-width: 400px; 
-	max-height: 400px;
-	margin: 2em;
+.header__subscription-text {
+  max-width: 60%;
+  display: inline-block;
 }
 
 .header__input {
-	padding: 2em;
-  	text-align: center;
-	display: flex;
-    justify-content: center;
+  padding: 0em 0em 3em 0em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 div.horizontal {
-  margin-top: 5em;
   display: flex;
   justify-content: center;
 }
@@ -52,4 +83,10 @@ div.horizontal {
 div.vertical {
   display: flex;
   flex-direction: column;  justify-content: center;
+}
+
+@media screen and (max-width: 300px) {
+  .header__media {
+    margin: 2em 0;
+  }
 }

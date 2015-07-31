@@ -11,15 +11,7 @@ $overlay-header: rgba(0, 0, 0, .5);
 $highlight-color: $yellow;
 
 // Page properties
-$spacing-height: 15px;
-$max-site-width: 700px;
+$portrait-min-width: "(min-width: 20em)";
 $tablet-min-width: "(min-width: 40em)";
 $desktop-min-width: "(min-width: 50em)";
-
 $content-max-width: 960px;
-
-// Font size
-
-// $header
-// $description
-// $main - content
