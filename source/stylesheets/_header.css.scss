@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-.header__media {
+.header__media-video {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -19,15 +19,25 @@
   min-height: 100%;
   transform: translateX(-50%) translateY(-50%);
   z-index: -1;
+  visibility: visible;
 
-  @include media-query("(max-width: 650px)") {
-    background-image: url("../images/background/techdu_kids_blur.png");
-    background-repeat: no-repeat;
-    width: auto; /*or your image's width*/
-    height: auto; /*or your image's height*/
-    margin: 0;
-    padding: 0;
-  }  
+  @include media-query("(max-width: 660px)") {
+    visibility: hidden;  
+  } 
+}
+
+.header__media-background {
+  position: absolute;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  visibility: hidden;
+  
+  @include media-query("(max-width: 660px)") {
+    visibility: visible;  
+  } 
 }
 
 .header__logo{

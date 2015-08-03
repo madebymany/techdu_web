@@ -32,6 +32,10 @@
 .event-details {
 	@include inline-list;
 	font-size: 1em;
+ 
+	@include media-query("(max-width: 650px)") {
+  	display: inline;
+  } 
 }
 
 .event-details__location {
