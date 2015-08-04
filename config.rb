@@ -36,9 +36,13 @@
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
+
+activate :autoprefixer do |config|
+    config.browsers = ['last 2 versions', 'Explorer >= 9']
+end
 
 # Methods defined in the helpers block are available in templates
 
@@ -48,6 +52,7 @@ helpers EventHelper
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
+
 
 after_configuration do
   sprockets.append_path File.join root.to_s, "bower_components"
@@ -63,9 +68,6 @@ configure :build do
 
   # Enable cache buster
   activate :asset_hash
-
-  # Replace Bourbon with autoprefixer
-  activate :autoprefixer
 
   # Use relative URLs
   # activate :relative_assets
