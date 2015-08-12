@@ -21,7 +21,6 @@ $text-color: #454449;
 }
 
 html, button, input, select, textarea {
-  font-weight: 300;
   color: $text-color;
 }
 
@@ -66,23 +65,26 @@ li {
 
 body {
   background-color: $background;
+  font-size: 100%;
   min-width: 320px;
 }
 
-.inline-list {
+@mixin inline-list {
   list-style:none;
   display: flex;
   margin:2;
+
+  > * {
+    padding: 0.5em;
+  }
 }
 
-.inline-list__item_right {
-  padding: 0.5em;
+@mixin inline-list__item--right {
   text-align: justify;
   flex: 1 80%;
 }
 
-.inline-list__item_left {
-  padding: 0.5em;
+@mixin inline-list__item--left {
   text-align: left;
   flex: 1 20%; 
 }

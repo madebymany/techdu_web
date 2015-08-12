@@ -1,41 +1,103 @@
 .header {
-	position: relative;
+  position: relative;
+  width: 100%;
 }
 
-.header__media {
-	display: block;
-	width: 100%;
+.header-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header__media-video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+  visibility: visible;
+
+  @include media-query("(max-width: 660px)") {
+    visibility: hidden;  
+  } 
+}
+
+.header__media-background {
+  position: absolute;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  visibility: hidden;
+  
+  @include media-query("(max-width: 660px)") {
+    visibility: visible;  
+  } 
+}
+
+.header__logo{
+  width: 80%;
+  max-width: 25em;
+  margin: 3em auto 0.625em auto;
+  display: block;
 }
 
 .header__overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: $overlay-header;
-	color: #fff;
+  background-color: $overlay-header;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
 }
 
 .header__text {
+<<<<<<< HEAD
 	text-align:center;
 	font-size: 2.75em;
   font-weight: bold;
   padding: 0 2em 0 2em;
+=======
+  font-size: 1.5em;
+  font-weight: bold;
+  max-width: 80%;
+  display: inline-block;
+
+  @include media-query($tablet-min-width) {
+    font-size: 2.75em;
+  }
+
+  &:after {
+    width: 80px;
+    height: 2px;
+    background-color: #fff;
+    content: "";
+    display: block;
+    margin: 1em auto;
+
+  }
+>>>>>>> DataEventsUpdates
 }
 
-.header__logo {
-	height: auto; 
-	width: auto; 
-	max-width: 400px; 
-	max-height: 400px;
-	margin: 2em;
+.header__subscription-text {
+  text-align: center;
+  max-width: 60%;  
+  margin: auto auto;
 }
 
 .header__input {
+<<<<<<< HEAD
 	padding: 2em;
   text-align: center;
 	display: flex;
+=======
+  padding: 0em 0em 3em 0em;
+  text-align: center;
+  display: flex;
+>>>>>>> DataEventsUpdates
   justify-content: center;
 }
 
@@ -46,6 +108,16 @@ div.horizontal {
 
 div.vertical {
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
   justify-content: center;
+=======
+  flex-direction: column;  justify-content: center;
+}
+
+@media screen and (max-width: 300px) {
+  .header__media {
+    margin: 2em 0;
+  }
+>>>>>>> DataEventsUpdates
 }

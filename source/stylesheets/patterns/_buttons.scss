@@ -17,7 +17,7 @@
 
 %button--filled {
   @extend %button;
-  @include transition(background-color .25s);
+  transition: background-color .25s;
   background-color: $highlight-color;
   color: #fff;
 
@@ -28,7 +28,7 @@
 
 %button--ghost {
   @extend %button;
-  @include transition(.25s);
+  transition: .25s;
   border: 2px solid $highlight-color;
   color: $highlight-color;
 

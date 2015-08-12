@@ -22,10 +22,17 @@
 }
 
 .site-footer-logo {
-  width: 20%;
-  display: inline-block;
-  vertical-align: middle;
+  width: 25%;
+  padding: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    
+  @include media-query("(max-width: 660px)") {
+    width: 50%;  
+  }
 }
+
 
 @media screen and (max-width: 500px) {
   .site-footer {

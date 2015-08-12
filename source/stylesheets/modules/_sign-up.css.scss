@@ -34,7 +34,6 @@
 
 .sign-up__form__submit {
   @extend %button--ghost;
-  margin-left: -7px;
 }
 
 .sign-up__form__field__header {
@@ -44,27 +43,28 @@
 .sign-up__form__email {
   @extend %unstyled-input;
   @extend %button-or-input-field-text;
-  @include appearance(none);
+  appearance: none; 
   border: 2px solid $grey;
   background-color: #fff;
   padding: .5em 1em .65em;
-  display: block;
+  
   width: 100%;
 
   &:focus {
     border-color: $yellow;
   }
 
-  @include media-query("(min-width: 72em)") {
-    width: 400px;
+  @include media-query($portrait-min-width) {
+    display: block;
   }
 }
 
 .sign-up__form__submit,
 .sign-up__form__email {
   font-size: em(16);
+  max-width: 250px;
 
-  @include media-query($tablet-min-width) {
-    font-size: em(20);
+  @include media-query($portrait-min-width) {
+    max-width: 150px;
   }
 }

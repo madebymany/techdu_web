@@ -1,4 +1,5 @@
 <header class="header">
+<<<<<<< HEAD
 	<img class="header__media" src="/images/techdu_background.gif">
 	<div class="header__overlay">
 	<div class="horizontal">
@@ -17,41 +18,74 @@
     	</div>
     </form>
 	</div>
+=======
+  
+<div class="header-container">
+  <div class="header__media-holder">
+      <video loop muted preload="auto" class="header__media-video" autoplay="autoplay" poster="/images/" >
+        <source src="video/techdu.ogv" type="video/mp4" />
+        <source src="video/techdu.m4v" type="video/mp4" />
+        <source src="video/techdu.webm" type="video/webm" />
+      </video>
+      <img class="header__media-background" src="/images/background/techdu_kids_blur.png"/>
+    </div>
+    <div class="header__overlay">
+      <img class="header__logo" src="/images/logo.png" alt="techdu logo" />
+      <h1 class="header__text">Bridging the worlds of technology and education</h1>
+      <p class="header__subscription-text">Subscribe to our mailing list for news and information about future events</p>
+      <form class="header__input" action="//madebymany.us3.list-manage.com/subscribe?u=bb6ef8c1b569c34510855551f&id=2c5505341e" method="post">
+        <div class="sign-up__form__field">
+          <input placeholder="Email" name="email" type="text" class="sign-up__form__email">
+        </div>
+        <div class="sign-up__form__field">
+          <button type="submit" class="sign-up__form__submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+>>>>>>> DataEventsUpdates
 </header>
 
-<body>
-	<div class="main-content">
-		<p class="title"> What is tEchDU?</p>
-		<p class="desc">
-			We learn what matters to students and teachers most and collaborate with Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-		</p>
-	</div>
+<section>
+  <div class="main-content">
+    <p class="desc">"At tEchDU, we learn what matters to students and teachers most and collaborate with the tech industry to help create impactful and transformative solutions for education."   
+    </p>
+  </div>
 
-	<% data.events.each do |event| %>
-		<div class="event-content">
-			<h2 class="event-heading"><%= event.heading %></h2>
-			
-			<% if event_has_url?(event) %>
-				<div class="event-media site-width">
-	        <iframe src='<%= event.media %>' width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-	    	</div>
-    	<% else %>
-    		<div class="event-image site-width">
-	    		<div class="event-image__media">
-	  				<img src="/images/<%= event.media %>">
-	  			</div>
-	  		</div>
-    	<% end %>
+  <% data.events.each do |event| %>
+    <section class="event" style="background-size: 350%; background-image: url(/images/background/<%= event.background %>);">
+      <div class="event-inner">
+        <header class="event-heading">
+          <h2 class="event-heading__title"><%= event.heading %></h2>
+        </header>
+        <div class="event-content">
+          <% if event_has_url?(event) %>
+            <div class="event-media">
+              <iframe src='<%= event.media %>' width="940" height="530" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          <% else %>
+            <div class="event-image site-width">
+              <div class="event-image__media">
+                <img src="/images/<%= event.media %>">
+              </div>
+            </div>
+          <% end %>
 
-    	<ul class="inline-list site-width">
-    		<li class="inline-list__item_left">
-	      		<div ><%= event.date %></div>
-	      		<div ><%= event.location %></div>
-	      	</li>
-	      <li class="inline-list__item_right"><%= event.small_desc %></li>
-	    </ul>
+          <div class="event-details">
+            <div class="event-details__location">
+              <b><%= event.date %></b><br />
+              <%= event.location %>
+            </div>
+            <div class="event-details__description">
+              <%= event.small_desc %>
+            </div>
+          </div>
 
-	    <div class="event-full-desc site-width"><%= event.full_desc %></div>
-	  </div>
-	<% end %>
-</body> 
+          <div class="event-full-desc site-width event-description">
+            <%= event.full_desc %>
+          </div>
+         </div>
+      </div>
+    </section>
+  <% end %>
+</section> 
