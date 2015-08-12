@@ -2,7 +2,7 @@
 	margin: 0 auto;
 	max-width: $content-max-width;
 	color: $white;
-  padding: 0em 3em 3em 1em;
+  padding: 0em 3em 1em 3em;
 }
 
 @mixin event-heading {
@@ -29,6 +29,15 @@
 	line-height: 130%;
 }
 
+.event {	
+	background-size: 350%; 
+
+	@include media-query("(max-width: 650px)") {
+  	background-size: 750% !important; 
+	}
+}
+ 
+
 .event-details {
 	@include inline-list;
 	font-size: 1em;
@@ -47,6 +56,9 @@
 	@include inline-list__item--right;
 	font-size: 1.3em;
 	line-height: 130%;
+	
+	@include media-query("(max-width: 650px)") {
+  } 
 }
 
 .event-full-desc {

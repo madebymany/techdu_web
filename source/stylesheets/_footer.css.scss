@@ -22,14 +22,14 @@
 }
 
 .site-footer-logo {
-  width: 25%;
+  width: 255px;
   padding: 1em;
   display: block;
   margin-left: auto;
   margin-right: auto;
     
   @include media-query("(max-width: 660px)") {
-    width: 50%;  
+    width: 200px;  
   }
 }
 
