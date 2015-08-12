@@ -41,7 +41,8 @@ configure :development do
 end
 
 activate :autoprefixer do |config|
-    config.browsers = ['last 2 versions', 'Explorer >= 9']
+  config.browsers = ['last 2 versions', 'Explorer >= 9']
+   config.remove   = false
 end
 
 # Methods defined in the helpers block are available in templates

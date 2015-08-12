@@ -9,7 +9,7 @@
     background: "techdu_workshop_blur.jpg"
   - 
     event_number: "OUR SECOND EVENT"
-    heading: "Teachers in training workshop"
+    heading: "Workshop for Teachers in Training"
     media: https://player.vimeo.com/video/122119375?color=ffd256
     location: "London South Bank University"
     date: "27th February"
@@ -18,7 +18,7 @@
     background: "techdu_teachers_blur.png"
   - 
     event_number: "OUR THIRD EVENT"
-    heading: "Kids"
+    heading: "Workshop for Kids: Learn with Technology"
     media: https://player.vimeo.com/video/92722492?color=ffd256
     location: "Made by Many"
     date: "5th of April"
