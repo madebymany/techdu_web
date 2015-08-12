@@ -2,7 +2,7 @@
 	margin: 0 auto;
 	max-width: $content-max-width;
 	color: $white;
-  padding: 3em;
+  padding: 0em 3em 3em 1em;
 }
 
 @mixin event-heading {
@@ -15,7 +15,7 @@
 	text-align:center;
 	font-size: 2em;
 	font-weight: bold;
-	padding: 0.5em 0 0.5em 0;
+	padding: 1.5em 0 1.5em 0;
 }
 
 .event-heading__label {
