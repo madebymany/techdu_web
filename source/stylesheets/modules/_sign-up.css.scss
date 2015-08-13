@@ -17,10 +17,6 @@
   }
 }
 
-.sign-up__form__label {
-  @extend %visually-hidden;
-}
-
 .sign-up__form__field {
   margin-bottom: 1em;
   margin-top: 1.5em;
@@ -41,7 +37,7 @@
 }
 
 .sign-up__form__email {
-  @extend %unstyled-input;
+  @include unstyled-input;
   @extend %button-or-input-field-text;
   appearance: none; 
   border: 2px solid $grey;

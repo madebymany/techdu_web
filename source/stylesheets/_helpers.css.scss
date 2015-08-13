@@ -1,3 +1,15 @@
+@mixin media-query($media-query) {
+  @media #{$media-query} {
+    @content;
+  }
+}
+
+@mixin hover {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
 
 @mixin fluid-media-wrapper__media {
   position: absolute;
