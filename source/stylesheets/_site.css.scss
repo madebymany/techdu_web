@@ -24,5 +24,6 @@
   
   @include media-query("(max-width: 650px)") {
     font-size: 0.65em;
+    padding: 1em 0em 1em 0em;
   } 
 }

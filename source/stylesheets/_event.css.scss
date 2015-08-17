@@ -3,6 +3,10 @@
 	max-width: $content-max-width;
 	color: $white;
   padding: 0em 3em 1em 3em;
+	
+	@include media-query("(max-width: 650px)") {
+  	padding: 0em 1em 1em 1em; 
+	}
 }
 
 @mixin event-heading {
@@ -25,7 +29,7 @@
 }
 
 .event-description {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	line-height: 130%;
 }
 
@@ -36,11 +40,9 @@
   	background-size: 750% !important; 
 	}
 }
- 
 
 .event-details {
 	@include inline-list;
-	font-size: 1em;
  
 	@include media-query("(max-width: 650px)") {
   	display: inline;
@@ -48,13 +50,13 @@
 }
 
 .event-details__location {
-	font-size: 1.3em;
+	font-size: 1.2m;
 	line-height: 130%;
 }
 
 .event-details__description {
 	@include inline-list__item--right;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	line-height: 130%;
 	
 	@include media-query("(max-width: 650px)") {

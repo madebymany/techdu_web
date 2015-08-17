@@ -2,14 +2,14 @@
   background-color: $white;
   color: $mid-grey;
   font-size: 1.2em;
-  padding: 2em;
+  padding: 1em;
   text-align: center;
   height: 50%;
-  white-space: nowrap;
 }
 
 .site-footer___links {
-  text-align:right;
+  text-align:center;
+  margin: 1em 0em 1em 0em;
 
   & .inline-list__item {
     margin-left:1em;
