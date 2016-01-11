@@ -1,9 +1,25 @@
   - 
+    heading: "The 20 things you should know when designing for classrooms"
+    media: http://www.slideshare.net/slideshow/embed_code/key/KZrFQLBSKoju5x 
+    location:  
+    date:
+    small_desc: "Are you building an educational product or service? We collected 20 \"must haves\" for you to consider when entering the classroom environment. Have your own point of view? We’re really keen to learn about your experience using or designing technology for education."
+    full_desc:
+    background: techdu_20_blur.jpeg
+  -
+    heading: "Hackaball Lesson Plan Workshop"
+    media: techdu_lesson_plan.jpeg 
+    location: "Made by Many" 
+    date: "30th of July"
+    small_desc: "Every successful lesson starts with good preparation. No matter how cool, if it wants to be successful, every edtech gadget needs to be versatile, relevant and usable in the context of a lesson. Firmly believing in these statements, we wanted to support the Hackaball team at Made by Many in making the \"smart ball that lets kids invent and play games\" fit for classroom."
+    full_desc: "We gathered a small group of our friend teachers for an afternoon filled with collaborative exploration activities looking at what lessons could look like with Hackaball. We focussed on primary school subjects, specifically computing - understanding of if;then logic and algorithms. Once again, this session proved that one cannot omit teachers when making solutions for classrooms. We loved the enthusiasm Gavin, Ted, Olivia, and our little tester Matilda brought to the workshop. You’ll be able to view some of the sample lesson plans on <a href=\"http://Hackaball.com\">Hackaball.com</a> soon."
+    background: "techdu_lesson_plan_blur.jpeg"
+  - 
     event_number: "OUR LAST EVENT"
     heading: "Brainstorm with Teachers"
     media: techdu_bt_1.jpg
     location: "Made by Many"
-    date: "19th March"
+    date: "19th of March"
     small_desc: "A Brainstorming session with teachers to explore challenges and opportunities for teachers in the digital age. The goal was to learn about improving teacher's experience with technology in the classrooms and understand where the industry can help."
     full_desc: "Technology is nowhere close to replacing teachers but it is aiding the transformation of their roles. Teachers are excited about use of tech in their classroom. In order to implement it successfully, they need to understand how it fits with the curriculum, learning objectives, and the assessment system they are working with. We will be publishing more detailed learnings about designing for education soon."
     background: "techdu_workshop_blur.jpg"
@@ -12,7 +28,7 @@
     heading: "Workshop for Teachers in Training"
     media: https://player.vimeo.com/video/122119375?color=ffd256
     location: "London South Bank University"
-    date: "27th February"
+    date: "27th of February"
     small_desc: "We were kindly invited by Clare Copeland, who is a senior lecturer in Education and a Course Director for PGCE Primary & Early Years teachers, to talk to her class about technology in education."
     full_desc: "We decided to show these amazing future teachers playful ways to teach coding in a workshops with Raspberry Pi and Hackaball. This was a very exciting and inspiring opportunity for us to share some of our knowledge but, more importantly, to learn what future teachers are looking for in technology, and how tech can make their careers in teaching better."
     background: "techdu_teachers_blur.png"

@@ -4,7 +4,7 @@ module EventHelper
   end
 
   def event_has_url?(e)
-  	e.media =~ /\Ahttps?:\/\//
+    e.media =~ /\Ahttps?:\/\//
   end
 
 end
