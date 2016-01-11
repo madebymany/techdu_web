@@ -20,6 +20,7 @@
 	font-size: 2em;
 	font-weight: bold;
 	padding: 1.5em 0 1.5em 0;
+	line-height: 1.1em;
 }
 
 .event-heading__label {
@@ -35,7 +36,9 @@
 
 .event {	
 	background-size: 350%; 
-
+	font-size: 1.2em;
+	line-height: 150%;
+	
 	@include media-query("(max-width: 650px)") {
   	background-size: 750% !important; 
 	}
@@ -43,22 +46,14 @@
 
 .event-details {
 	@include inline-list;
- 
+	
 	@include media-query("(max-width: 650px)") {
   	display: inline;
   } 
 }
 
-.event-details__location {
-	font-size: 1.2m;
-	line-height: 130%;
-}
-
 .event-details__description {
 	@include inline-list__item--right;
-	font-size: 1.2em;
-	line-height: 130%;
-	
 	@include media-query("(max-width: 650px)") {
   } 
 }

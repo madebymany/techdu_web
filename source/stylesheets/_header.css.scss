@@ -59,19 +59,11 @@
   font-weight: bold;
   max-width: 80%;
   display: inline-block;
+  padding-bottom: 2em;
+  padding-top: 1em;
 
   @include media-query($tablet-min-width) {
     font-size: 2.75em;
-  }
-
-  &:after {
-    width: 80px;
-    height: 2px;
-    background-color: #fff;
-    content: "";
-    display: block;
-    margin: 1em auto;
-
   }
 }
 
@@ -82,7 +74,6 @@
 }
 
 .header__input {
-  padding: 0em 0em 3em 0em;
   text-align: center;
   display: flex;
   justify-content: center;
